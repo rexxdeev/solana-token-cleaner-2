@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solana Token Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Solana Web3.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@solana/web3.js@1.88.2/lib/index.iife.min.js"></script>
+
+  <!-- SPL Token CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@solana/spl-token@0.3.9/lib/index.iife.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Solana Token Viewer</h1>
+    <button id="connectButton">🔌 Connect Wallet</button>
+    <p id="walletAddress"></p>
+
+    <section>
+      <h2>💰 Token Balances</h2>
+      <div id="tokenList"></div>
+    </section>
+
+    <section>
+      <h2>🧹 Closeable Token Accounts</h2>
+      <p id="reclaimableSol"></p>
+      <ul id="closeableAccounts"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
